@@ -1,0 +1,24 @@
+{
+  "name": "tiny-agent",
+  "version": "0.1.0",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "start": "pnpm agent --",
+    "llm": "bash scripts/llm.sh start",
+    "llm:start": "bash scripts/llm.sh start",
+    "llm:status": "bash scripts/llm.sh status",
+    "llm:stop": "bash scripts/llm.sh stop",
+    "agent": "bash openshell/run.sh",
+    "agent:local": "bash scripts/agent-local.sh",
+    "check": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "typescript": "^5.8.2"
+  },
+  "dependencies": {
+    "openai": "^6.42.0",
+    "zod": "^4.4.3"
+  }
+}
